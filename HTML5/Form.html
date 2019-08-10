@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Form Element</h1>
+    <fieldset>
+            <legend>
+                Registration Form</legend>
+                <form action="#">
+
+                    <table>
+
+                        <tr>
+
+                            <td>
+                                Enter Name
+                        
+                            </td>
+                            <td>
+                                <input type="Text"  placeholder="Enter Name" autocomplete="off"  required="off">
+                            </td>
+                        </tr>
+                        <tr>
+
+                                <td>
+                                    Enter Password
+                            
+                                </td>
+                                <td>
+                                    <input type="password"  placeholder="Enter Password" autocomplete="off"  required="off">
+                                </td>
+                            </tr>
+                            <tr>
+
+                                    <td>
+                                        Enter E-mail id
+                                
+                                    </td>
+                                    <td>
+                                        <input type="email"  placeholder="Enter E-mail" autofocus>
+                                    </td>
+                                </tr>
+                                <tr>
+
+                                        <td>
+                                            Enter Age
+                                    
+                                        </td>
+                                        <td>
+                                            <input type="number"  min="18" max="50">
+                                            
+                                        </td>
+                                    </tr>
+                                    <td>
+                                            Enter Phone Number                                  
+                                    </td>
+                                    <td>
+                                        <input type="text"  title="Only 10 digits allowed" pattern="[0-9]{10}" placeholder="Enter Phone">
+                                        
+                                    </td>
+                                </tr>
+                                <tr>
+                                <td>
+                                    Enter Colour                                  
+                            </td>
+                            <td>
+                                <input type="color">
+
+                                
+                            </td>
+
+                        </tr>
+                        <td>
+                                Enter DOB                                
+                        </td>
+                        <td>
+                            <input type="date">
+                            
+                        </td>
+                        <td>
+                            <input type="time">
+
+                        </td>
+                        <td>
+                            <input type="datetime-local">
+                        </td>
+                        <tr>
+
+                        <td>
+                            Select Range
+                        </td>
+                        <td>
+                            <input type="range" value="2000" min="1000" max="5000" onchange="output.value=value" step="100">
+
+                        </td>
+                        <td>
+                            <output id="output">2000</output>
+                        </td>
+                    </tr>
+
+                            <td>
+                                    Select Country
+                            
+                                </td>
+                                <td>
+                                    <input list="datalist">
+                                    <datalist id="datalist">
+                                        <option value="India"></option>
+                                        <option value="USA"></option>
+                                        <option value="UK"></option>
+                                    </datalist>
+                                </td>
+                            </tr>
+                    
+                            <tr>
+                                <td> Enter Your Message </td>
+                                <td>
+                                    <textarea spellcheck="False" cols="30" placeholder="Enter Your Message" rows="10">
+                                    </textarea>
+                                </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="reset">
+                                    </td>
+                                    <td><input type="submit">
+                                    </td>
+                                        </tr>
+
+
+                    </table>
+                    
+
+                </form>
+            </legend>
+    </fieldset>
+</body>
+</html>
