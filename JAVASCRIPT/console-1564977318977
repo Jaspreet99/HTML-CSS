@@ -1,0 +1,94 @@
+var a;
+undefined
+typeof a;
+"undefined"
+a=1
+1
+typeof a;
+"number"
+a=100.2
+100.2
+typeof a;
+"number"
+a=11;
+11
+typeof a;
+"number"
+a="11";
+"11"
+typeof a
+"string"
+var b=100;
+undefined
+typeof b;
+"number"
+a+b;
+"11100"
+a-b;
+-89
+a*b;
+1100
+"jaspreet"+"Singh"
+"jaspreetSingh"
+a="one"
+"one"
+b=100
+100
+var c=a-b;
+undefined
+typeof c;
+"number"
+c
+NaN
+isNaN(c)
+true
+isNaN(c)? 0:c
+0
+var c=100/1
+undefined
+typeof c;
+"number"
+isFinite(c)?0;
+VM1090:1 Uncaught SyntaxError: Unexpected token ;
+isFinite(c)?0
+
+;
+VM1107:3 Uncaught SyntaxError: Unexpected token ;
+isFinite(c)?0:c
+
+;
+0
+parseInt(a)
+NaN
+typeof parseInt
+"function"
+typeof Number;
+"function"
+class A()
+VM1238:1 Uncaught SyntaxError: Unexpected token (
+class A{}
+undefined
+typeof A
+"function"
+var a ='ok'
+undefined
+typeof a;
+"string"
+a="lets do it"
+"lets do it"
+a= 'dkndnf
+VM1445:1 Uncaught SyntaxError: Invalid or unexpected token
+a= 'dkndnf /
+VM1454:1 Uncaught SyntaxError: Invalid or unexpected token
+a= 100;
+100
+b=100
+100
+c=a+b;
+200
+'a is ${a} and B is ${b} and c is ${c}'
+"a is ${a} and B is ${b} and c is ${c}"
+a==b
+true
+a===b
+true
