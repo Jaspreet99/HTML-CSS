@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+            function clickCounter(){
+                if(typeof(Storage)!="undefined"){
+                    if(localStorage.clickCount){
+                        localStorage.clickCount=Number(localStorage.clickCount)+1;
+                    }
+                    else{
+                        localStorage.clickCount=1;
+                    }
+                    document.getElementById("Result").innerHTML="You Have Clicked This Button " + localStorage.clickCount + " Times"
+                }
+                else{
+                    document.getElementById("Result").innerHTML="Sorry Your Browser Doesn't Support Web Storage";
+                }
+            }
+        
+        </script>
+</head>
+
+<body>
+    <p>
+        <button onclick="clickCounter()" type="button">Click</button>
+    </p>
+    <div id="Result"></div>
+    <p>This is a Local Storage Web Page Example</p>
+</body>
+</html>
